@@ -1,0 +1,170 @@
+/* Palette 157179  */
+:root {
+  --color-one: #394a6d;
+  --color-two: #3c9d9b;
+  --color-three: #52de97;
+  --color-four: #c0ffb3;
+}
+
+/* Text Colors  */
+
+.text-primary {
+  color: var(--color-three);
+}
+
+.text-secondary {
+  color: var(--color-two);
+}
+
+/* Buttons + Background */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: var(--color-three);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary,
+.bg-primary {
+  background: var(--color-three);
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: var(--color-two);
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark {
+  background: var(--color-one);
+  color: #fff;
+}
+
+.btn-light,
+.bg-light {
+  background: #f4f4f4;
+  color: var(--color-one);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: var(--color-three);
+}
+
+/* Flex Items (3 about:icons on home page) */
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex Columns (sections with 2 columns) */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse; /*so img and text switch places from what is specified below*/
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*so img doesn't strecth weird*/
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Section Header */
+
+.section-header {
+  padding: 30px;
+  direction: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex grid  */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.flex-grid .column img {
+  height: 50%;
+}
